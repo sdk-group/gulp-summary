@@ -44,7 +44,9 @@ module.exports = function (file, options) {
             firstFile = file;
         }
 
-        var filename = path.relative(process.cwd(), file.path);
+        var cwd = options.hasOwnProperty('cwd') ? options.cwd : process.cwd();
+
+        var filename = path.relative(cwd, file.path);
         var path_parts = filename.split("\\");
         var leaf = concat;
 
