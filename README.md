@@ -1,2 +1,2 @@
 # gulp-summary
-Summary is a tool to build index of processed files
+Summary is a tool for building index of processed files
