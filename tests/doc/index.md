@@ -1,10 +1,9 @@
-* doc
-   * src
-       * tier2
-           * tier3
-               * [tier3-module-doc.md](/doc/src/tier2/tier3/tier3-module-doc.md)
-           * [some_module-doc.md](/doc/src/tier2/some_module-doc.md)
-       * tier2-2
-           * [other-tier2-module-doc.md](/doc/src/tier2-2/other-tier2-module-doc.md)
-           * [second-doc.md](/doc/src/tier2-2/second-doc.md)
-       * [app-doc.md](/doc/src/app-doc.md)
+* src
+   * tier2
+       * tier3
+           * [tier3-module-doc.md](/src/tier2/tier3/tier3-module-doc.md)
+       * [some_module-doc.md](/src/tier2/some_module-doc.md)
+   * tier2-2
+       * [other-tier2-module-doc.md](/src/tier2-2/other-tier2-module-doc.md)
+       * [second-doc.md](/src/tier2-2/second-doc.md)
+   * [app-doc.md](/src/app-doc.md)
