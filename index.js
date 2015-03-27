@@ -4,7 +4,7 @@ var path = require('path');
 var util = require('util');
 
 gulpError = function (message) {
-    return new gutil.PluginError('gulp-indexmaker', message)
+    return new gutil.PluginError('gulp-summary', message)
 }
 
 String.prototype.repeat = function (n) {
@@ -15,7 +15,7 @@ String.prototype.repeat = function (n) {
 module.exports = function (file, options) {
     "use strict";
     if (!file) {
-        throw new gutil.PluginError('gulp-indexmaker', 'Missing file option for gulp-indexmaker');
+        throw new gutil.PluginError('gulp-summary', 'Missing file option for gulp-summary');
     }
 
     if (!options || typeof options !== 'object') {
