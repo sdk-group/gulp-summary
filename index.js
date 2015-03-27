@@ -106,7 +106,7 @@ module.exports = function (file, options) {
                 if (key === '$files') {
                     object[key].forEach(function (elem) {
                         files_str += prep + '[' + elem + ']';
-                        files_str += '(' + path + '/' + elem + ')' + '\n';
+                        files_str += '(.' + path + '/' + elem + ')' + '\n';
                     });
                 } else if (typeof object[key] === 'object') {
                     result += prep + key + '\n';
