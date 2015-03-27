@@ -27,7 +27,7 @@ var rename = require("gulp-rename");
 
 gulp.task('doc',  function () {
     var summary_wd = './doc';
-    gulp.src("./src/**/*.js")
+    gulp.src("./src/**/*.js",{read : false})
         .pipe(markdox())
         .pipe(rename(function (path) {
             path.basename += "-doc";
@@ -41,3 +41,5 @@ gulp.task('doc',  function () {
 
 });
 ```
+
+###Example gulpfile.js [here](./examples/gulpfile.js)
