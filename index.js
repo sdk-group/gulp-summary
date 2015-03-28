@@ -27,11 +27,6 @@ module.exports = function (file, options) {
 
     function makeIndex(file, enc, callback) {
 
-        if (file.isNull()) {
-            callback();
-            return;
-        }
-
         if (file.isStream()) {
             this.emit('error', new gutil.PluginError('gulp-concat', 'Streaming not supported'));
             callback();
