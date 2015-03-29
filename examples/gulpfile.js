@@ -6,18 +6,19 @@ var summary = require('gulp-summary');
 var del = require('del');
 
 gulp.task('doc', ['clean-docs'], function () {
-    var summary_wd = './doc';
-    gulp.src("./src/**/*.js")
+    gulp.src("./src/**/*.js", {
+            base: './'
+        })
         .pipe(markdox())
         .pipe(rename(function (path) {
             path.basename += "-doc";
             path.extname = ".md";
         }))
-        .pipe(gulp.dest(summary_wd + "/src"))
+        .pipe(gulp.dest("./doc"))
         .pipe(summary('index.md', {
             cwd: summary_wd
         }))
-        .pipe(gulp.dest(summary_wd));
+        .pipe(gulp.dest("./doc"));
 
 });
 

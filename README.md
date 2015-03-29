@@ -43,3 +43,4 @@ gulp.task('doc',  function () {
 ```
 
 ###Example gulpfile.js [here](./examples/gulpfile.js)
+###Example with watch [here](./examples/gulpfile-with-watch.js)
